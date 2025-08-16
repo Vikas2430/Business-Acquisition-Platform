@@ -32,13 +32,14 @@ A revolutionary business acquisition platform that flips the traditional M&A app
 
 ## 🛠 Technology Stack
 
-- **Framework**: Next.js 14 with App Router
-- **Styling**: Tailwind CSS v4 with custom design system
+- **Framework**: Next.js 15 with App Router
+- **Architecture**: Server/Client component separation for optimal performance
+- **Styling**: Tailwind CSS with custom design system
 - **UI Components**: shadcn/ui component library
 - **Typography**: Space Grotesk (headings) + DM Sans (body)
 - **State Management**: React hooks with localStorage persistence
 - **File Processing**: Client-side document upload and analysis simulation
-- **Routing**: File-based routing with dynamic routes
+- **Routing**: File-based routing with dynamic routes and async params support
 
 ## 📦 Installation & Setup
 
@@ -117,16 +118,33 @@ npm start
 │   │   ├── buyer/                 # Buyer dashboard and features
 │   │   └── seller/                # Seller dashboard and matching
 │   ├── deals/[id]/                # Deal management system
+│   │   ├── page.tsx               # Deal overview and management
+│   │   └── ai-analysis/           # AI analysis for specific deals
+│   │       ├── page.tsx           # Server component wrapper
+│   │       └── ai-analysis-client.tsx # Client-side AI analysis
 │   ├── buyer/[id]/                # Buyer profile pages
+│   │   ├── page.tsx               # Server component wrapper
+│   │   └── buyer-profile-client.tsx # Client-side buyer profile
 │   └── ai-analysis/demo/          # Standalone AI analysis demo
 ├── components/
-│   ├── ui/                        # shadcn/ui components
-│   ├── ai-document-analyzer.tsx   # Reusable AI analysis component
-│   ├── buyer-profile-card.tsx     # Buyer profile display
-│   └── seller-business-analyzer.tsx # Seller-specific AI tools
+│   └── ui/                        # shadcn/ui components (Button, Card, Badge, etc.)
 ├── public/                        # Static assets and test files
 └── README.md
 \`\`\`
+
+## 🏗 Architecture & Performance
+
+### Next.js 15 Optimizations
+- **Server/Client Component Separation**: Optimized rendering with server components handling async operations
+- **Async Params Support**: Modern Next.js 15 routing with Promise-based params
+- **Type Safety**: Full TypeScript support with strict type checking
+- **Build Optimization**: Clean builds with no unused components or dependencies
+
+### Component Architecture
+- **UI Components**: Reusable shadcn/ui components for consistent design
+- **Page Components**: Server components for data fetching and routing
+- **Client Components**: Interactive components with state management
+- **Clean Structure**: Removed unused components for optimal bundle size
 
 ## 🔧 Key Features Deep Dive
 
