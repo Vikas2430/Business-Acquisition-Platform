@@ -1,0 +1,22 @@
+{
+  "company": "ACME Digital Solutions Inc.",
+  "industry": "Software/SaaS",
+  "founded": 2018,
+  "employees": 45,
+  "location": "Austin, TX",
+  "financials": {
+    "revenue": 3770000,
+    "netIncome": 112000,
+    "grossMargin": 0.7,
+    "ebitda": 338000,
+    "cashFlow": 285000
+  },
+  "metrics": {
+    "customerCount": 127,
+    "retentionRate": 0.92,
+    "averageContractValue": 45000,
+    "monthlyRecurringRevenue": 204000
+  },
+  "risks": ["Customer concentration", "Key person dependency", "Market competition", "Seasonal variations"],
+  "strengths": ["Strong customer retention", "Recurring revenue model", "Growing market demand", "Experienced team"]
+}
