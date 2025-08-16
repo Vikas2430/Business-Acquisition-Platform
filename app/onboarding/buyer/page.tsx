@@ -39,8 +39,8 @@ export default function BuyerOnboardingPage() {
     roiExpectation: "",
 
     // Step 3: Acquisition Preferences
-    preferredIndustries: [],
-    businessTypes: [],
+    preferredIndustries: [] as string[],
+    businessTypes: [] as string[],
     geographicPreference: "",
     involvementLevel: "",
 
@@ -50,7 +50,7 @@ export default function BuyerOnboardingPage() {
     specificRequirements: "",
   })
 
-  const updateFormData = (field: string, value: string | number | boolean) => {
+  const updateFormData = (field: string, value: string | number | boolean | string[]) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
   }
 

@@ -104,7 +104,21 @@ const recentActivity = [
 ]
 
 export default function BuyerDashboardPage() {
-  const [matches, setMatches] = useState<Array<{ id: string; [key: string]: unknown }>>([])
+  const [matches, setMatches] = useState<Array<{
+    id: string
+    businessName: string
+    businessTitle: string
+    businessCompany: string
+    businessAvatar: string
+    matchScore: number
+    connectedAt: string
+    contactInfo: {
+      email: string
+      phone: string
+      linkedin: string
+      website: string
+    }
+  }>>([])
   const [passedBusinesses, setPassedBusinesses] = useState<string[]>([])
   const [likedBusinesses, setLikedBusinesses] = useState<string[]>([])
   const [currentBusinessIndex, setCurrentBusinessIndex] = useState(0)

@@ -143,7 +143,24 @@ export default function SellerDashboard() {
   const [rejected, setRejected] = useState<number[]>([])
   const [showDetails, setShowDetails] = useState(false)
   const [currentBuyerIndex, setCurrentBuyerIndex] = useState(0)
-  const [availableBuyers, setAvailableBuyers] = useState<Array<{ id: number; [key: string]: unknown }>>([])
+  const [availableBuyers, setAvailableBuyers] = useState<Array<{
+    id: number
+    name: string
+    title: string
+    company: string
+    avatar: string
+    location: string
+    budget: string
+    experience: string
+    industries: string[]
+    timeline: string
+    background: string
+    fundingSource: string
+    roiExpectation: string
+    involvementLevel: string
+    recentActivity: string
+    matchScore: number
+  }>>([])
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {

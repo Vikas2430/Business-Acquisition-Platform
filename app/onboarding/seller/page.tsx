@@ -41,7 +41,7 @@ export default function SellerOnboardingPage() {
 
     // Step 3: Sale Preferences
     buyerType: "",
-    dealStructure: [],
+    dealStructure: [] as string[],
     timeCommitment: "",
 
     // Step 4: Timeline & Goals
@@ -50,7 +50,7 @@ export default function SellerOnboardingPage() {
     postSaleInvolvement: "",
   })
 
-  const updateFormData = (field: string, value: string | number | boolean) => {
+  const updateFormData = (field: string, value: string | number | boolean | string[]) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
   }
 
