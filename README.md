@@ -4,7 +4,7 @@ A revolutionary business acquisition platform that flips the traditional M&A app
 
 ## 🚀 Live Demo
 
-**🌐 Deployed Application**: [Business Acquisition Platform](https://business-acquisition-platform-y4xt-4u1nidpar.vercel.app/)
+**🌐 Deployed Application**: [Business Acquisition Platform](https://business-acquisition-p-git-3c68fa-vrikster30-gmailcoms-projects.vercel.app)
 
 ## 🚀 Features
 
