@@ -2,6 +2,10 @@
 
 A revolutionary business acquisition platform that flips the traditional M&A approach by empowering sellers to initiate contact with qualified buyers, similar to Bumble's matching model. The platform streamlines the entire acquisition process with AI-powered tools, comprehensive matching systems, and intuitive workflows.
 
+## 🚀 Live Demo
+
+**🌐 Deployed Application**: [Business Acquisition Platform](https://business-acquisition-platform-y4xt-4u1nidpar.vercel.app/)
+
 ## 🚀 Features
 
 ### Core Functionality
