@@ -9,13 +9,21 @@ import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Bot, Upload, FileText, CheckCircle, AlertTriangle, Zap, Eye } from "lucide-react"
 
 interface DocumentAnalyzerProps {
-  onAnalysisComplete?: (results: any) => void
+  onAnalysisComplete?: (results: AnalysisResults) => void
+}
+
+interface AnalysisResults {
+  documentType: string
+  confidence: number
+  keyFindings: Array<{ type: string; finding: string }>
+  riskScore: number
+  recommendations: string[]
 }
 
 export function AIDocumentAnalyzer({ onAnalysisComplete }: DocumentAnalyzerProps) {
   const [isAnalyzing, setIsAnalyzing] = useState(false)
   const [analysisProgress, setAnalysisProgress] = useState(0)
-  const [analysisResults, setAnalysisResults] = useState<any>(null)
+  const [analysisResults, setAnalysisResults] = useState<AnalysisResults | null>(null)
 
   const startAnalysis = () => {
     setIsAnalyzing(true)
@@ -97,7 +105,7 @@ export function AIDocumentAnalyzer({ onAnalysisComplete }: DocumentAnalyzerProps
 
             <div className="space-y-2">
               <h4 className="font-medium text-sm">Key Findings:</h4>
-              {analysisResults.keyFindings.map((finding: any, index: number) => (
+              {analysisResults.keyFindings.map((finding, index: number) => (
                 <Alert key={index}>
                   {finding.type === "positive" ? (
                     <CheckCircle className="h-4 w-4" />

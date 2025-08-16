@@ -29,9 +29,9 @@ export default function OnboardingPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-12">
           <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">Welcome to DealConnect</Badge>
-          <h1 className="font-serif font-bold text-3xl md:text-4xl mb-4">Let's make your M&A experience seamless</h1>
+                      <h1 className="font-serif font-bold text-3xl md:text-4xl mb-4">Let&apos;s make your M&A experience seamless</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            First, tell us whether you're looking to buy or sell a business. We'll customize your experience
+                          First, tell us whether you&apos;re looking to buy or sell a business. We&apos;ll customize your experience
             accordingly.
           </p>
         </div>
@@ -50,7 +50,7 @@ export default function OnboardingPage() {
               <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Building2 className="w-8 h-8 text-primary" />
               </div>
-              <CardTitle className="font-serif text-xl">I'm Selling My Business</CardTitle>
+                              <CardTitle className="font-serif text-xl">I&apos;m Selling My Business</CardTitle>
               <CardDescription className="text-base">
                 Connect with qualified buyers and manage your sale process
               </CardDescription>
@@ -86,7 +86,7 @@ export default function OnboardingPage() {
               <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <ShoppingCart className="w-8 h-8 text-primary" />
               </div>
-              <CardTitle className="font-serif text-xl">I'm Looking to Buy</CardTitle>
+                              <CardTitle className="font-serif text-xl">I&apos;m Looking to Buy</CardTitle>
               <CardDescription className="text-base">
                 Get discovered by sellers and find your perfect acquisition
               </CardDescription>

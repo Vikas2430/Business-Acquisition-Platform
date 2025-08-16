@@ -104,8 +104,7 @@ const recentActivity = [
 ]
 
 export default function BuyerDashboardPage() {
-  const [searchQuery, setSearchQuery] = useState("")
-  const [matches, setMatches] = useState<any[]>([])
+  const [matches, setMatches] = useState<Array<{ id: string; [key: string]: unknown }>>([])
   const [passedBusinesses, setPassedBusinesses] = useState<string[]>([])
   const [likedBusinesses, setLikedBusinesses] = useState<string[]>([])
   const [currentBusinessIndex, setCurrentBusinessIndex] = useState(0)
@@ -279,7 +278,7 @@ export default function BuyerDashboardPage() {
                   <Building className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
                   <h3 className="font-serif font-semibold text-xl mb-2">All caught up!</h3>
                   <p className="text-muted-foreground mb-4">
-                    You've reviewed all available businesses. Check back later for new opportunities!
+                    You&apos;ve reviewed all available businesses. Check back later for new opportunities!
                   </p>
                   <Button
                     onClick={() => {
@@ -406,7 +405,7 @@ export default function BuyerDashboardPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="font-serif">Active Matches</CardTitle>
-                <CardDescription>Buyers you've connected with and their contact information</CardDescription>
+                <CardDescription>Buyers you&apos;ve connected with and their contact information</CardDescription>
               </CardHeader>
               <CardContent>
                 {matches.length > 0 ? (
@@ -519,7 +518,7 @@ export default function BuyerDashboardPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="font-serif">Saved Businesses</CardTitle>
-                <CardDescription>Businesses you've saved for later review</CardDescription>
+                <CardDescription>Businesses you&apos;ve saved for later review</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="text-center py-8">

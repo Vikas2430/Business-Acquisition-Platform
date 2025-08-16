@@ -50,7 +50,7 @@ export default function BuyerOnboardingPage() {
     specificRequirements: "",
   })
 
-  const updateFormData = (field: string, value: any) => {
+  const updateFormData = (field: string, value: string | number | boolean) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
   }
 

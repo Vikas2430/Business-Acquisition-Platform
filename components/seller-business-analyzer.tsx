@@ -8,13 +8,22 @@ import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Bot, FileText, CheckCircle, AlertTriangle, Zap, Eye, Target } from "lucide-react"
 
 interface BusinessAnalyzerProps {
-  onAnalysisComplete?: (results: any) => void
+  onAnalysisComplete?: (results: BusinessAnalysisResults) => void
+}
+
+interface BusinessAnalysisResults {
+  marketReadinessScore: number
+  valuationRange: string
+  confidence: number
+  keyInsights: Array<{ type: string; finding: string }>
+  recommendations: string[]
+  timeToMarket: string
 }
 
 export function SellerBusinessAnalyzer({ onAnalysisComplete }: BusinessAnalyzerProps) {
   const [isAnalyzing, setIsAnalyzing] = useState(false)
   const [analysisProgress, setAnalysisProgress] = useState(0)
-  const [analysisResults, setAnalysisResults] = useState<any>(null)
+  const [analysisResults, setAnalysisResults] = useState<BusinessAnalysisResults | null>(null)
 
   const startBusinessAnalysis = () => {
     setIsAnalyzing(true)
@@ -117,7 +126,7 @@ export function SellerBusinessAnalyzer({ onAnalysisComplete }: BusinessAnalyzerP
 
             <div className="space-y-2">
               <h4 className="font-medium text-sm">Key Insights:</h4>
-              {analysisResults.keyInsights.map((insight: any, index: number) => (
+              {analysisResults.keyInsights.map((insight, index: number) => (
                 <Alert key={index}>
                   {insight.type === "positive" ? (
                     <CheckCircle className="h-4 w-4" />

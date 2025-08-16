@@ -66,7 +66,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="font-serif font-bold text-3xl md:text-4xl mb-4">Why Choose DealConnect?</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We've reimagined the M&A process to be more efficient, transparent, and successful for everyone involved.
+              We&apos;ve reimagined the M&A process to be more efficient, transparent, and successful for everyone involved.
             </p>
           </div>
 
@@ -145,7 +145,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-serif font-bold text-3xl md:text-4xl mb-6">Ready to Transform Your M&A Experience?</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join thousands of successful buyers and sellers who've discovered a better way to do business.
+            Join thousands of successful buyers and sellers who&apos;ve discovered a better way to do business.
           </p>
           <Link href="/onboarding">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8">

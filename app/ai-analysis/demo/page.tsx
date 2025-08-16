@@ -37,7 +37,7 @@ export default function AIAnalysisDemo() {
     setUploadedFiles((prev) => [...prev, ...newFiles])
 
     // Simulate file processing
-    newFiles.forEach((file, index) => {
+    newFiles.forEach((file) => {
       let progress = 0
       const interval = setInterval(() => {
         progress += Math.random() * 20

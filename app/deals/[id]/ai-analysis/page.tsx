@@ -306,7 +306,7 @@ export default function AIAnalysisPage({ params }: { params: { id: string } }) {
     if (e.dataTransfer.files && e.dataTransfer.files[0]) {
       handleFiles(Array.from(e.dataTransfer.files))
     }
-  }, [])
+  }, [handleFiles])
 
   const handleFiles = (files: File[]) => {
     files.forEach((file) => {
